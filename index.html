@@ -5,7 +5,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Kubik - Tailwind Template</title>
+        <link rel="icon" type="image/x-icon" href="assets/image/instanteach_logomini_green.png">
+        <title>Instanteach</title>
         <link rel="stylesheet" href="assets/css/tailwind.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +24,7 @@
 
                 <nav class="flex-wrap lg:flex items-center justify-between mb-20 lg:mb-40" x-data="{navbarOpen:false}">
                     <div class="flex items-center justify-between mb-10 lg:mb-0">
-                        <img src="assets/image/navbar-logo.svg" alt="Logo">
+                        <img src="assets/image/instanteach_logo_green2.png" alt="Logo" width="190">
 
                         <button class="flex items-center justify-center border border-green-500 w-10 h-10 text-green-500 rounded-md outline-none lg:hidden ml-auto" @click="navbarOpen = !navbarOpen">
                             <i data-feather="menu"></i>
@@ -32,40 +33,40 @@
 
                     <ul class="hidden lg:block lg:flex flex-col lg:flex-row lg:items-center lg:space-x-20" :class="{'hidden':!navbarOpen,'flex':navbarOpen}">
                         <li class="font-medium text-green-500 text-lg hover:text-green-300 transition ease-in-out duration-300 mb-5 lg:mb-0">
-                            <a href="#">Services</a>
+                            <a href="#howworks">¿Cómo funciona?</a>
                         </li>
 
                         <li class="font-medium text-green-500 text-lg hover:text-green-300 transition ease-in-out duration-300 mb-5 lg:mb-0">
-                            <a href="#">Works</a>
+                            <a href="#model">Modelo educativo</a>
                         </li>
 
                         <li class="font-medium text-green-500 text-lg hover:text-green-300 transition ease-in-out duration-300 mb-5 lg:mb-0">
-                            <a href="#">Blog</a>
+                            <a href="#team">Nuestro equipo</a>
                         </li>
 
                        <li class="px-8 py-3 font-medium text-green-500 text-lg text-center border-2 border-green-500 rounded-md hover:bg-green-500 hover:text-white transition ease-linear duration-300">
-                            <a href="#">Connect</a>
+                            <a href="#cabecera">Solicita una clase</a>
                        </li>
                     </ul>
                 </nav>
 
-                <header class="flex-col xl:flex-row flex justify-between">
+                <header class="flex-col xl:flex-row flex justify-between" id="cabecera">
 
                     <div class="mx-auto text-center xl:text-left xl:mx-0 mb-20 xl:mb-0">
-                        <h1 class="font-bold text-gray-700 text-3xl md:text-4xl leading-tight">¿Que clase buscas?</h1>
-                        <p class="font-normal text-gray-500 text-sm md:text-lg mb-5">Te acercamos a un profesor al instante.</p>
+                        <h1 class="font-bold text-gray-700 text-3xl md:text-4xl leading-tight">¿Qué clase buscas?</h1>
+                        <p class="font-normal text-gray-500 text-sm md:text-lg mb-5">Te acercamos a un tutor/a al instante.</p>
                         
                         <script src="wsp.js"></script>
                         <form class="grid justify-center">
 
                             <div class="mb-4">
                                 <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
-                                   ¿Cómo te llamas?
+                                   ¿Cuál es tu nombre?
                                 </label>
                                 <input id="nombre" class="appearance-none border rounded shadow w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none" id="username" type="text" placeholder="Gabriela Muñoz">
                               </div>
 
-                            <p for="" class="block text-gray-700 text-sm font-bold mb-2" >¿Cual asignatura estas buscando?</p>
+                            <p for="" class="block text-gray-700 text-sm font-bold mb-2" >¿Qué asignatura estas buscando?</p>
                             <div class="relative w-64 mb-5">
                                 <select id="clase" class="block appearance-none w-full bg-white border text-gray-700 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
                                     <option>Matemática</option>
@@ -77,10 +78,10 @@
                                 </div>
                             </div>
 
-                            <p for="" class="block text-gray-700 text-sm font-bold mb-2" >¿Cuando quieres tener tu clase?</p>                                
+                            <p for="" class="block text-gray-700 text-sm font-bold mb-2" >¿Cuándo quieres tener tu clase?</p>                                
                             <div class="relative w-64 mb-5">
                                 <select id="cuando" class="block appearance-none w-full bg-white border text-gray-700 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
-                                    <option>Ahora</option>
+                                    <option>Lo antes posible</option>
                                     <option>Dentro del día</option>
                                     <option>Quiero programar</option>
                                 </select>
@@ -92,7 +93,7 @@
                             <div class="md:flex md:items-center md:justify-center">
                                 <div>
                                   <button class="shadow bg-green-500 hover:bg-green-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button" onclick="gotowhatsapp()">
-                                    Buscar
+                                    Solicitar
                                   </button>
                                 </div>
                             </div>
@@ -157,12 +158,12 @@
 
                 <p class="font-normal text-gray-500 text-md md:text-lg text-center mb-20 md:mb-40">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit <br> anim id est laborum.</p>
                 -->
-                <div class="flex flex-col xl:flex-row items-center justify-between mb-20 md:mb-40">
+                <div class="flex flex-col xl:flex-row items-center justify-between mb-20 md:mb-40" id="howworks">
                     <div class="mx-auto xl:mx-0 mb-20 xl:mb-0">
                         <img src="assets/image/image-1.svg" alt="Image">
                     </div>
 
-                    <div class="mx-auto xl:mx-0 text-center xl:text-left">
+                    <div class="mx-auto xl:mx-0 text-center xl:text-left" >
                         <h1 class="font-bold text-gray-700 text-3xl md:text-4xl mb-10">¿Cómo funciona<br> <b>Instanteach</b>?</h1>
 
                         <p class="font-normal text-gray-400 text-sm md:text-lg mb-5">Disponible 24/7 <br> Ten una clase en cualquier momento con uno de nuestros tutores disponible.<br> </p>
@@ -174,7 +175,7 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col xl:flex-row items-center justify-between mb-20 md:mb-40">
+                <div class="flex flex-col xl:flex-row items-center justify-between mb-20 md:mb-40" id="model">
                     <div class="mx-auto xl:mx-0 text-center xl:text-left mb-20 xl:mb-0">
                         <h1 class="font-bold text-gray-700 text-3xl md:text-4xl mb-10">Clases 1:1</h1>
 
@@ -196,7 +197,7 @@
                         <img src="assets/image/image-3.svg" alt="Image">
                     </div>
 
-                    <div class="mx-auto xl:mx-0 text-center xl:text-left">
+                    <div class="mx-auto xl:mx-0 text-center xl:text-left" id="team">
                         <h1 class="font-bold text-gray-700 text-3xl md:text-4xl mb-10">Nuestro equipo</h1>
 
                         <p class="font-normal text-gray-400 text-sm md:text-lg mb-5">Nuestro equipo de tutores y tutoras está conformado por <br>estudiantes de ingeniería de las universidades más prestigiosas de Chile.</p>
@@ -317,12 +318,12 @@
 
                 <div class="lg:flex flex-col md:flex-row text-center lg:text-left lg:justify-between">
                     <div class="mb-10 lg:mb-0">
-                        <img src="assets/image/footer-logo.svg" alt="Image" class="mb-5 mx-auto lg:mx-0">
+                        <img src="assets/image/instanteach_logomini_green.png" alt="Image" class="mb-5 mx-auto lg:mx-0" width="90">
     
-                        <p class="font-normal text-gray-400 text-md">Excepteur sint occaecat cupidatat non <br> proident, sunt in culpa qui officia deserunt <br> mollit anim id est laborum.</p>
+                        <p class="font-normal text-gray-400 text-md">Tu clase al instante.<br></p>
                     </div>
 
-                    <div class="space-y-4 mb-10 lg:mb-0">
+                    <div class="space-y-4 mb-10 lg:mb-0" style="display: none;">
                         <h4 class="font-semibold text-gray-500 text-lg mb-6">Our services</h4>
 
                         <a href="#" class="block font-normal text-gray-400 text-md hover:text-gray-700 transition ease-in-out duration-300">Pricing</a>
@@ -334,7 +335,7 @@
                         <a href="#" class="block font-normal text-gray-400 text-md hover:text-gray-700 transition ease-in-out duration-300">Development</a>
                     </div>
 
-                    <div class="space-y-4 mb-10 lg:mb-0">
+                    <div class="space-y-4 mb-10 lg:mb-0" style="display: none;">
                         <h4 class="font-semibold text-gray-500 text-lg mb-6">Our Company</h4>
 
                         <a href="#" class="block font-normal text-gray-400 text-md hover:text-gray-700 transition ease-in-out duration-300">Reporting</a>
@@ -344,7 +345,7 @@
                         <a href="#" class="block font-normal text-gray-400 text-md hover:text-gray-700 transition ease-in-out duration-300">Management</a>
                     </div>
 
-                    <div class="space-y-4">
+                    <div class="space-y-4" style="display: none;">
                         <h4 class="font-semibold text-gray-500 text-lg mb-6">Our services</h4>
 
                         <a href="#" class="block font-normal text-gray-400 text-md hover:text-gray-700 transition ease-in-out duration-300">121 King St, VIC3000, US</a>
