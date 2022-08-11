@@ -52,19 +52,52 @@
                 <header class="flex-col xl:flex-row flex justify-between">
 
                     <div class="mx-auto text-center xl:text-left xl:mx-0 mb-20 xl:mb-0">
-                        <h1 class="font-bold text-gray-700 text-3xl md:text-6xl leading-tight mb-10">A digital <br> Product design <br> Agency</h1>
+                        <h1 class="font-bold text-gray-700 text-3xl md:text-4xl leading-tight">¿Que clase buscas?</h1>
+                        <p class="font-normal text-gray-500 text-sm md:text-lg mb-5">Te acercamos a un profesor al instante.</p>
+                        
+                        <script src="wsp.js"></script>
+                        <form class="grid justify-center">
 
-                        <p class="font-normal text-gray-500 text-sm md:text-lg mb-10">We develop world class high quality product <br> designs.</p>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                                   ¿Cómo te llamas?
+                                </label>
+                                <input id="nombre" class="appearance-none border rounded shadow w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none" id="username" type="text" placeholder="Gabriela Muñoz">
+                              </div>
 
-                        <div class="flex items-center justify-center lg:justify-start">
-                            <a href="#" class="px-8 py-3 bg-green-500 font-medium text-white text-md md:text-lg rounded-md hover:bg-green-700 transition ease-in-out duration-300 mr-14">Our story</a>
+                            <p for="" class="block text-gray-700 text-sm font-bold mb-2" >¿Cual asignatura estas buscando?</p>
+                            <div class="relative w-64 mb-5">
+                                <select id="clase" class="block appearance-none w-full bg-white border text-gray-700 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                                    <option>Matemática</option>
+                                    <option>Programación Python</option>
+                                    <option>Busco otra</option>
+                                </select>
+                                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                                </div>
+                            </div>
 
-                            <a href="#" class="hidden lg:block font-normal text-gray-500 text-lg mr-8">Watch Showreel</a>
+                            <p for="" class="block text-gray-700 text-sm font-bold mb-2" >¿Cuando quieres tener tu clase?</p>                                
+                            <div class="relative w-64 mb-5">
+                                <select id="cuando" class="block appearance-none w-full bg-white border text-gray-700 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                                    <option>Ahora</option>
+                                    <option>Dentro del día</option>
+                                    <option>Quiero programar</option>
+                                </select>
+                                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                                </div>
+                            </div>
 
-                            <a href="#" class="px-4 py-4 text-gray-300 border-2 border-gray-200 rounded-full">
-                                <i data-feather="play"></i>
-                            </a>
-                        </div>
+                            <div class="md:flex md:items-center md:justify-center">
+                                <div>
+                                  <button class="shadow bg-green-500 hover:bg-green-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button" onclick="gotowhatsapp()">
+                                    Buscar
+                                  </button>
+                                </div>
+                            </div>
+                            
+                        </form>
                     </div>
 
                     <div class="mx-auto xl:mx-0">
