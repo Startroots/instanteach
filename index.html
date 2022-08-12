@@ -41,7 +41,7 @@
                         </li>
 
                         <li class="font-medium text-green-500 text-lg hover:text-green-300 transition ease-in-out duration-300 mb-5 lg:mb-0">
-                            <a href="#team">Nuestro equipo</a>
+                            <a href="#team">Se tutor</a>
                         </li>
 
                        <li class="px-8 py-3 font-medium text-green-500 text-lg text-center border-2 border-green-500 rounded-md hover:bg-green-500 hover:text-white transition ease-linear duration-300">
@@ -202,10 +202,59 @@
 
                         <p class="font-normal text-gray-400 text-sm md:text-lg mb-5">Nuestro equipo de tutores y tutoras está conformado por <br>estudiantes de ingeniería de las universidades más prestigiosas de Chile.</p>
 
-                        <a href="#" class="flex items-center justify-center xl:justify-start font-semibold text-green-500 text-lg gap-3 hover:text-green-700 transition ease-in-out duration-300">
+                        <h1 href="#" class="font-bold text-gray-400 text-xl md:text-2xl mb-10">
                             Inscríbete como tutor/a
-                            <i data-feather="chevron-right"></i>
-                        </a>
+                        </h1>
+
+                        <form class="grid justify-center">
+
+                            <div class="mb-4">
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                                   ¿Cuál es tu nombre?
+                                </label>
+                                <input id="tutor_name" class="appearance-none border rounded shadow w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none" id="username" type="text" placeholder="Ej: Gabriela Muñoz">
+                            </div>
+
+                            <div class="mb-4">
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                                   ¿Cuál es tu casa de estudios?
+                                </label>
+                                <input id="tutor_university" class="appearance-none border rounded shadow w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none" id="username" type="text" placeholder="Ej: Universidad Adolfo Ibañez">
+                            </div>
+
+                            <p for="" class="block text-gray-700 text-sm font-bold mb-2" >Respecto a tus estudios eres:</p>
+                            <div class="relative w-64 mb-5">
+                                <select id="tutor_educational_level" class="block appearance-none w-full bg-white border text-gray-700 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                                    <option>Alumno Regular</option>
+                                    <option>Egresado</option>
+                                    <option>Titulado</option>
+                                </select>
+                                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                                </div>
+                            </div>
+
+                            <p for="" class="block text-gray-700 text-sm font-bold mb-2" >¿Qué asignatura quieres enseñar?</p>
+                            <div class="relative w-64 mb-5">
+                                <select id="tutor_course" class="block appearance-none w-full bg-white border text-gray-700 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                                    <option>Matemática</option>
+                                    <option>Programación Python</option>
+                                    <option value="Matemática y Programación Python">Ambas</option>
+                                </select>
+                                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                                </div>
+                            </div>
+
+                            <div class="md:flex md:items-center md:justify-center">
+                                <div>
+                                  <button class="shadow bg-green-500 hover:bg-green-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button" onclick="gotowhatsappTutors()">
+                                    Postular
+                                  </button>
+                                </div>
+                            </div>
+                            
+                        </form>
                     </div>
                 </div>
 
@@ -316,9 +365,9 @@
 
             <div class="container max-w-screen-xl mx-auto px-4">
 
-                <div class="lg:flex flex-col md:flex-row text-center lg:text-left lg:justify-between">
+                <div class="lg:flex flex-col md:flex-row text-center lg:text-center lg:justify-center">
                     <div class="mb-10 lg:mb-0">
-                        <img src="assets/image/instanteach_logomini_green.png" alt="Image" class="mb-5 mx-auto lg:mx-0" width="90">
+                        <img src="assets/image/instanteach_logomini_green.png" alt="Image" class="mb-5 mx-auto" width="90">
     
                         <p class="font-normal text-gray-400 text-md">Tu clase al instante.<br></p>
                     </div>
