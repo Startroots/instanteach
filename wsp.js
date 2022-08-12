@@ -6,7 +6,7 @@ function gotowhatsapp() {
     var email = document.getElementById("email").value;
 
 
-    var url = "https://wa.me/+56975266900?text=" 
+    var url = "https://wa.me/+56983294729?text=" 
     + "Nombre: " + name + "%0a"
     + "clase: " + clase + "%0a"
     + "cuando: " + cuando  + "%0a"
@@ -23,7 +23,7 @@ function gotowhatsappTutors() {
     var educational_level = document.getElementById("tutor_educational_level").value;
     var course = document.getElementById("tutor_course").value;
 
-    var url = "https://wa.me/+56979945385?text=" 
+    var url = "https://wa.me/+56983294729?text=" 
     + "Hola Instanteach mi nombre es " + name +", soy alumno "+ educational_level +" de la "
     + university +" y estoy interesado en realizar clases como tutor del curso " + course + ".%0a"
     +"Mi correo de contacto es "+  email
