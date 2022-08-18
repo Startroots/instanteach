@@ -17,11 +17,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/x-icon" href="assets/image/instanteach_logomini_green.png">
         <title>Instanteach</title>
-        <link rel="stylesheet" href="assets/css/tailwind.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;600;700;800&display=swap" rel="stylesheet">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js" integrity="sha512-7x3zila4t2qNycrtZ31HO0NnJr8kg2VI67YLoRSyi9hGhRN66FHYWr7Axa9Y1J9tGYHVBPqIjSE1ogHrJTz51g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
         <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     </head>
 
@@ -36,25 +36,29 @@
                     <div class="flex items-center justify-between mb-10 lg:mb-0">
                         <img src="assets/image/instanteach_logo_green2.png" alt="Logo" width="190">
 
-                        <button class="flex items-center justify-center border border-green-500 w-10 h-10 text-green-500 rounded-md outline-none lg:hidden ml-auto" @click="navbarOpen = !navbarOpen">
+                        <button class="flex items-center justify-center border border-green-600 w-10 h-10 text-green-600 rounded-md outline-none lg:hidden ml-auto" @click="navbarOpen = !navbarOpen">
                             <i data-feather="menu"></i>
                         </button>
                     </div>
 
                     <ul class="hidden lg:block lg:flex flex-col lg:flex-row lg:items-center lg:space-x-20" :class="{'hidden':!navbarOpen,'flex':navbarOpen}">
-                        <li class="font-medium text-green-500 text-lg hover:text-green-300 transition ease-in-out duration-300 mb-5 lg:mb-0">
+                        <li class="font-medium text-green-600 text-lg hover:text-green-400 transition ease-in-out duration-400 mb-5 lg:mb-0">
                             <a href="#howworks">¿Cómo funciona?</a>
                         </li>
 
-                        <li class="font-medium text-green-500 text-lg hover:text-green-300 transition ease-in-out duration-300 mb-5 lg:mb-0">
+                        <li class="font-medium text-green-600 text-lg hover:text-green-400 transition ease-in-out duration-400 mb-5 lg:mb-0">
+                            <a href="#simulator">Simulador PAES</a>
+                        </li>
+
+                        <li class="font-medium text-green-600 text-lg hover:text-green-400 transition ease-in-out duration-400 mb-5 lg:mb-0">
                             <a href="#model">Modelo educativo</a>
                         </li>
 
-                        <li class="font-medium text-green-500 text-lg hover:text-green-300 transition ease-in-out duration-300 mb-5 lg:mb-0">
+                        <li class="font-medium text-green-600 text-lg hover:text-green-400 transition ease-in-out duration-400 mb-5 lg:mb-0">
                             <a href="#team">Sé Tutor</a>
                         </li>
 
-                       <li class="px-8 py-3 font-medium text-green-500 text-lg text-center border-2 border-green-500 rounded-md hover:bg-green-500 hover:text-white transition ease-linear duration-300">
+                       <li class="px-8 py-3 font-medium text-green-600 text-lg text-center border-2 border-green-600 rounded-md hover:bg-green-600 hover:text-white transition ease-linear duration-400">
                             <a href="#cabecera">Solicita una clase</a>
                        </li>
                     </ul>
@@ -64,7 +68,7 @@
 
                     <div class="mx-auto text-center xl:text-left xl:mx-0 mb-20 xl:mb-0">
                         <h1 class="font-bold text-gray-700 text-3xl md:text-4xl leading-tight">¿Qué clase buscas?</h1>
-                        <p class="font-normal text-gray-500 text-sm md:text-lg mb-5">Te acercamos a un tutor/a al instante.</p>
+                        <p class="font-normal text-gray-600 text-sm md:text-lg mb-5">Te acercamos a un tutor/a al instante.</p>
                         
                         <script src="wsp.js"></script>
                         <form class="grid justify-center">
@@ -109,7 +113,7 @@
 
                             <div class="md:flex md:items-center md:justify-center">
                                 <div>
-                                  <button class="shadow bg-green-500 hover:bg-green-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button" onclick="gotowhatsapp()">
+                                  <button class="shadow bg-green-600 hover:bg-green-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button" onclick="gotowhatsapp()">
                                     Solicitar
                                   </button>
                                 </div>
@@ -129,15 +133,15 @@
         </section>
         <!-- home section //end -->
 
-        <!-- feature section JAVI-->
-        <section class="py-8 md:py-16">
+        <!-- feature section-->
+        <section class="py-8 md:py-16 scroll-smooth">
 
             <div class="container max-w-screen-xl mx-auto px-4">
 
                 <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2">
                     <div class="text-center mb-10 xl:mb-0">
                         <div class="flex items-center justify-center">
-                            <div class="w-20 py-7 flex justify-center bg-purple-50 text-purple-500 rounded-md mb-5 md:mb-10">
+                            <div class="w-20 py-7 flex justify-center bg-purple-50 text-purple-600 rounded-md mb-5 md:mb-10">
                                 <i data-feather="file-text"></i>
                             </div>
                         </div>
@@ -149,7 +153,7 @@
 
                     <div class="text-center mb-10 md:mb-0">
                         <div class="flex items-center justify-center">
-                            <div class="w-20 py-7 flex justify-center bg-red-50 text-red-500 rounded-md mb-5 md:mb-10">
+                            <div class="w-20 py-7 flex justify-center bg-red-50 text-red-600 rounded-md mb-5 md:mb-10">
                                 <i data-feather="code"></i>
                             </div>
                         </div>
@@ -167,13 +171,13 @@
         </section>
         <!-- feature section //end -->
 
-        <section class="py-8 md:py-16">
+        <section class="py-8 md:py-16 scroll-smooth">
 
             <div class="container max-w-screen-xl mx-auto px-4">
                 <!--
                 <h1 class="font-semibold text-gray-700 text-3xl md:text-4xl text-center mb-5">¿Cómo funciona Instanteach?</h1>
 
-                <p class="font-normal text-gray-500 text-md md:text-lg text-center mb-20 md:mb-40">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit <br> anim id est laborum.</p>
+                <p class="font-normal text-gray-600 text-md md:text-lg text-center mb-20 md:mb-40">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit <br> anim id est laborum.</p>
                 -->
                 <div class="flex flex-col xl:flex-row items-center justify-between mb-20 md:mb-40" id="howworks">
                     <div class="mx-auto xl:mx-0 mb-20 xl:mb-0">
@@ -185,7 +189,7 @@
 
                         <p class="font-normal text-gray-400 text-sm md:text-lg mb-5">Disponible 24/7 <br> Ten una clase en cualquier momento con uno de nuestros tutores disponible.<br> </p>
 
-                        <a href="#" class="flex items-center justify-center xl:justify-start font-semibold text-green-500 text-lg gap-3 hover:text-green-700 transition ease-in-out duration-300">
+                        <a href="#" class="flex items-center justify-center xl:justify-start font-semibold text-green-600 text-lg gap-3 hover:text-green-700 transition ease-in-out duration-400">
                             See more
                             <i data-feather="chevron-right"></i>
                         </a>
@@ -198,7 +202,7 @@
 
                         <p class="font-normal text-gray-400 text-sm md:text-lg mb-5">Resuelve un problema en específico o repasa conceptos <br> con un tutor o tutora solo para ti. <br> Todo esto a través de la plataforma Meet.</p>
 
-                        <a href="#" class="flex items-center justify-center xl:justify-start font-semibold text-green-500 text-lg gap-3 hover:text-green-700 transition ease-in-out duration-300">
+                        <a href="#" class="flex items-center justify-center xl:justify-start font-semibold text-green-600 text-lg gap-3 hover:text-green-700 transition ease-in-out duration-400">
                             See more
                             <i data-feather="chevron-right"></i>
                         </a>
@@ -272,7 +276,7 @@
 
                             <div class="md:flex md:items-center md:justify-center">
                                 <div>
-                                  <button class="shadow bg-green-500 hover:bg-green-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button" onclick="gotowhatsappTutors()">
+                                  <button class="shadow bg-green-600 hover:bg-green-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button" onclick="gotowhatsappTutors()">
                                     Postular
                                   </button>
                                 </div>
@@ -293,60 +297,60 @@
                 <!--
                 <h1 class="font-semibold text-gray-700 text-3xl md:text-4xl text-center mb-5">Our works</h1>
 
-                <p class="font-normal text-gray-500 text-md md:text-lg text-center mb-20">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit <br> anim id est laborum.</p>
+                <p class="font-normal text-gray-600 text-md md:text-lg text-center mb-20">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit <br> anim id est laborum.</p>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 xl:gap-10">
                     <div class="space-y-2 xl:space-y-4">
-                        <img src="assets/image/yoga-1.svg" alt="Image" class="hover:opacity-75 transition ease-in-out duration-300">
+                        <img src="assets/image/yoga-1.svg" alt="Image" class="hover:opacity-75 transition ease-in-out duration-400">
 
                         <p class="font-normal text-gray-400 text-base">Design, Branding, Development</p>
 
-                        <a href="#" class="block font-semibold text-gray-700 text-xl md:text-2xl hover:text-green-500 transition ease-in-out duration-300">Yoga School</a>
+                        <a href="#" class="block font-semibold text-gray-700 text-xl md:text-2xl hover:text-green-600 transition ease-in-out duration-400">Yoga School</a>
                     </div>
 
                     <div class="space-y-2 xl:space-y-4">
-                        <img src="assets/image/yoga-2.svg" alt="Image" class="hover:opacity-75 transition ease-in-out duration-300">
+                        <img src="assets/image/yoga-2.svg" alt="Image" class="hover:opacity-75 transition ease-in-out duration-400">
 
                         <p class="font-normal text-gray-400 text-base">Design, Branding, Development</p>
 
-                        <a href="#" class="block font-semibold text-gray-700 text-xl md:text-2xl hover:text-green-500 transition ease-in-out duration-300">Yoga School</a>
+                        <a href="#" class="block font-semibold text-gray-700 text-xl md:text-2xl hover:text-green-600 transition ease-in-out duration-400">Yoga School</a>
                     </div>
 
                     <div class="space-y-2 xl:space-y-4">
-                        <img src="assets/image/yoga-3.svg" alt="Image" class="hover:opacity-75 transition ease-in-out duration-300">
+                        <img src="assets/image/yoga-3.svg" alt="Image" class="hover:opacity-75 transition ease-in-out duration-400">
 
                         <p class="font-normal text-gray-400 text-base">Design, Branding, Development</p>
 
-                        <a href="#" class="block font-semibold text-gray-700 text-xl md:text-2xl hover:text-green-500 transition ease-in-out duration-300">Yoga School</a>
+                        <a href="#" class="block font-semibold text-gray-700 text-xl md:text-2xl hover:text-green-600 transition ease-in-out duration-400">Yoga School</a>
                     </div>
 
                     <div class="space-y-2 xl:space-y-4">
-                        <img src="assets/image/yoga-3.svg" alt="Image" class="hover:opacity-75 transition ease-in-out duration-300">
+                        <img src="assets/image/yoga-3.svg" alt="Image" class="hover:opacity-75 transition ease-in-out duration-400">
 
                         <p class="font-normal text-gray-400 text-base">Design, Branding, Development</p>
 
-                        <a href="#" class="block font-semibold text-gray-700 text-xl md:text-2xl hover:text-green-500 transition ease-in-out duration-300">Yoga School</a>
+                        <a href="#" class="block font-semibold text-gray-700 text-xl md:text-2xl hover:text-green-600 transition ease-in-out duration-400">Yoga School</a>
                     </div>
 
                     <div class="space-y-2 xl:space-y-4">
-                        <img src="assets/image/yoga-1.svg" alt="Image" class="hover:opacity-75 transition ease-in-out duration-300">
+                        <img src="assets/image/yoga-1.svg" alt="Image" class="hover:opacity-75 transition ease-in-out duration-400">
 
                         <p class="font-normal text-gray-400 text-base">Design, Branding, Development</p>
 
-                        <a href="#" class="block font-semibold text-gray-700 text-xl md:text-2xl hover:text-green-500 transition ease-in-out duration-300">Yoga School</a>
+                        <a href="#" class="block font-semibold text-gray-700 text-xl md:text-2xl hover:text-green-600 transition ease-in-out duration-400">Yoga School</a>
                     </div>
 
                     <div class="space-y-2 xl:space-y-4 mb-10 md:mb-20">
-                        <img src="assets/image/yoga-2.svg" alt="Image" class="hover:opacity-75 transition ease-in-out duration-300">
+                        <img src="assets/image/yoga-2.svg" alt="Image" class="hover:opacity-75 transition ease-in-out duration-400">
 
                         <p class="font-normal text-gray-400 text-base">Design, Branding, Development</p>
 
-                        <a href="#" class="block font-semibold text-gray-700 text-xl md:text-2xl hover:text-green-500 transition ease-in-out duration-300">Yoga School</a>
+                        <a href="#" class="block font-semibold text-gray-700 text-xl md:text-2xl hover:text-green-600 transition ease-in-out duration-400">Yoga School</a>
                     </div>
                 </div>
 
                 <div class="flex justify-center mb-20 md:mb-40">
-                    <a href="#" class="px-6 py-2 md:px-8 md:py-3 flex items-center gap-3 font-medium text-green-500 text-lg border-2 border-green-500 rounded-md hover:bg-green-500 hover:text-white transition ease-linear duration-300">
+                    <a href="#" class="px-6 py-2 md:px-8 md:py-3 flex items-center gap-3 font-medium text-green-600 text-lg border-2 border-green-600 rounded-md hover:bg-green-600 hover:text-white transition ease-linear duration-400">
                         See more works
                         <i data-feather="arrow-up-right"></i>
                     </a>
@@ -364,21 +368,21 @@
 
                 <div class="flex flex-wrap md:flex-nowrap justify-between mb-8">
                     <div>
-                        <p class="font-normal text-gray-500 text-md md:text-lg uppercase mb-3">Let's tealk</p>
+                        <p class="font-normal text-gray-600 text-md md:text-lg uppercase mb-3">Let's tealk</p>
 
                         <h1 class="font-bold text-gray-700 text-xl md:text-4xl">Do you have any Project?</h1>
                     </div>
 
                     <div class="mt-10">
-                        <a href="#" class="px-4 py-2 md:px-8 md:py-3 font-medium text-green-500 text-lg border-2 border-green-500 rounded-md hover:bg-green-500 hover:text-white transition ease-linear duration-300">
+                        <a href="#" class="px-4 py-2 md:px-8 md:py-3 font-medium text-green-600 text-lg border-2 border-green-600 rounded-md hover:bg-green-600 hover:text-white transition ease-linear duration-400">
                             Contact us now
                         </a>
                     </div>
                 </div>
 
-                <hr class="text-gray-300 mb-8">
+                <hr class="text-gray-400 mb-8">
 
-                <p class="font-normal text-gray-500 text-md md:text-lg mb-4 md:mb-10">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit <br> anim id est laborum.</p>
+                <p class="font-normal text-gray-600 text-md md:text-lg mb-4 md:mb-10">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit <br> anim id est laborum.</p>
 
             </div> 
             -->
@@ -397,39 +401,39 @@
                     </div>
 
                     <div class="space-y-4 mb-10 lg:mb-0" style="display: none;">
-                        <h4 class="font-semibold text-gray-500 text-lg mb-6">Our services</h4>
+                        <h4 class="font-semibold text-gray-600 text-lg mb-6">Our services</h4>
 
-                        <a href="#" class="block font-normal text-gray-400 text-md hover:text-gray-700 transition ease-in-out duration-300">Pricing</a>
+                        <a href="#" class="block font-normal text-gray-400 text-md hover:text-gray-700 transition ease-in-out duration-400">Pricing</a>
 
-                        <a href="#" class="block font-normal text-gray-400 text-md hover:text-gray-700 transition ease-in-out duration-300">UI Design</a>
+                        <a href="#" class="block font-normal text-gray-400 text-md hover:text-gray-700 transition ease-in-out duration-400">UI Design</a>
 
-                        <a href="#" class="block font-normal text-gray-400 text-md hover:text-gray-700 transition ease-in-out duration-300">Animation</a>
+                        <a href="#" class="block font-normal text-gray-400 text-md hover:text-gray-700 transition ease-in-out duration-400">Animation</a>
 
-                        <a href="#" class="block font-normal text-gray-400 text-md hover:text-gray-700 transition ease-in-out duration-300">Development</a>
+                        <a href="#" class="block font-normal text-gray-400 text-md hover:text-gray-700 transition ease-in-out duration-400">Development</a>
                     </div>
 
                     <div class="space-y-4 mb-10 lg:mb-0" style="display: none;">
-                        <h4 class="font-semibold text-gray-500 text-lg mb-6">Our Company</h4>
+                        <h4 class="font-semibold text-gray-600 text-lg mb-6">Our Company</h4>
 
-                        <a href="#" class="block font-normal text-gray-400 text-md hover:text-gray-700 transition ease-in-out duration-300">Reporting</a>
+                        <a href="#" class="block font-normal text-gray-400 text-md hover:text-gray-700 transition ease-in-out duration-400">Reporting</a>
 
-                        <a href="#" class="block font-normal text-gray-400 text-md hover:text-gray-700 transition ease-in-out duration-300">Get in Touch</a>
+                        <a href="#" class="block font-normal text-gray-400 text-md hover:text-gray-700 transition ease-in-out duration-400">Get in Touch</a>
 
-                        <a href="#" class="block font-normal text-gray-400 text-md hover:text-gray-700 transition ease-in-out duration-300">Management</a>
+                        <a href="#" class="block font-normal text-gray-400 text-md hover:text-gray-700 transition ease-in-out duration-400">Management</a>
                     </div>
 
                     <div class="space-y-4" style="display: none;">
-                        <h4 class="font-semibold text-gray-500 text-lg mb-6">Our services</h4>
+                        <h4 class="font-semibold text-gray-600 text-lg mb-6">Our services</h4>
 
-                        <a href="#" class="block font-normal text-gray-400 text-md hover:text-gray-700 transition ease-in-out duration-300">121 King St, VIC3000, US</a>
+                        <a href="#" class="block font-normal text-gray-400 text-md hover:text-gray-700 transition ease-in-out duration-400">121 King St, VIC4000, US</a>
 
-                        <a href="#" class="block font-normal text-gray-400 text-md hover:text-gray-700 transition ease-in-out duration-300">888-123-42287</a>
+                        <a href="#" class="block font-normal text-gray-400 text-md hover:text-gray-700 transition ease-in-out duration-400">888-123-42287</a>
 
-                        <a href="#" class="block font-normal text-gray-400 text-md hover:text-gray-700 transition ease-in-out duration-300">info@example.com</a>
+                        <a href="#" class="block font-normal text-gray-400 text-md hover:text-gray-700 transition ease-in-out duration-400">info@example.com</a>
                     </div>
                 </div>
 
-                <hr class="text-gray-300 mt-10">
+                <hr class="text-gray-400 mt-10">
 
                 <p class="font-normal text-gray-400 text-md text-center mt-5">&copy; 2022 Instanteach. All rights reserved.</p>
 
