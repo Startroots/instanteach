@@ -78,7 +78,7 @@
                                    ¿Cuál es tu nombre?
                                 </label>
                                 <input id="nombre" class="appearance-none border rounded shadow w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none" id="username" type="text" placeholder="Ej: Gabriela Muñoz">
-                              </div>
+                            </div>
 
                             <div class="mb-4">
                                 <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
@@ -134,33 +134,34 @@
         <!-- home section //end -->
 
         <!-- feature section-->
-        <section class="py-8 md:py-16 scroll-smooth">
+        <section class="py-8 md:py-16">
 
             <div class="container max-w-screen-xl mx-auto px-4">
 
-                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2">
-                    <div class="text-center mb-10 xl:mb-0">
-                        <div class="flex items-center justify-center">
-                            <div class="w-20 py-7 flex justify-center bg-purple-50 text-purple-600 rounded-md mb-5 md:mb-10">
+                <div class="grid grid-cols-1 md:grid-cols-2">
+
+                    <div class="grid grid-cols-4 text-left  mb-2">
+                        <div class="flex items-end justify-center">
+                            <div class="w-20 py-7 flex justify-center bg-purple-50 text-purple-600 rounded-md">
                                 <i data-feather="file-text"></i>
                             </div>
                         </div>
-
-                        <h2 class="font-semibold text-gray-700 text-xl md:text-3xl mb-5">Matemática</h2>
-
-                        <p class="font-normal text-gray-400 text-sm md:text-lg">(6to básico a 4to medio) <br>Resuelve dudas, ejercicios y tareas con uno de nuestros tutores y tutoras</p>
+                        <div class="grid col-span-3">
+                            <h2 class="font-semibold text-gray-700 text-xl mb-1">Matemática</h2>
+                            <p class="font-normal text-gray-400 text-sm"> <b>(6to básico a 4to medio)</b> <br>Resuelve dudas, ejercicios y tareas con uno de nuestros tutores y tutoras.</p>
+                        </div>
                     </div>
 
-                    <div class="text-center mb-10 md:mb-0">
-                        <div class="flex items-center justify-center">
-                            <div class="w-20 py-7 flex justify-center bg-red-50 text-red-600 rounded-md mb-5 md:mb-10">
+                    <div class="grid grid-cols-4 text-left mb-2">
+                        <div class="flex items-end justify-center">
+                            <div class="w-20 py-7 flex justify-center bg-red-50 text-red-600 rounded-md">
                                 <i data-feather="code"></i>
                             </div>
                         </div>
-
-                        <h2 class="font-semibold text-gray-700 text-xl md:text-3xl mb-5">Programación (Python)</h2>
-
-                        <p class="font-normal text-gray-400 text-sm md:text-lg">(Introcucción a la programación, Programación l) <br>Detecta bugs, aprende conceptos, mejora tu código o resuelve un ejercicio con la ayuda de un tutor o tutora</p>
+                        <div class="grid col-span-3">
+                            <h2 class="font-semibold text-gray-700 text-xl mb-1">Programación (Python)</h2>
+                            <p class="font-normal text-gray-400 text-sm"><b>(Introcucción a la programación, Programación l) </b> <br>Detecta bugs, aprende conceptos, mejora tu código o resuelve un ejercicio con la ayuda de un tutor o tutora.</p>
+                        </div>
                     </div>
 
 
@@ -171,14 +172,106 @@
         </section>
         <!-- feature section //end -->
 
-        <section class="py-8 md:py-16 scroll-smooth">
+        <section class="py-8 md:py-16" id="simulator">
 
             <div class="container max-w-screen-xl mx-auto px-4">
-                <!--
-                <h1 class="font-semibold text-gray-700 text-3xl md:text-4xl text-center mb-5">¿Cómo funciona Instanteach?</h1>
+                <div class="mx-auto xl:mx-0 text-center" >
+                    <h1 class="font-bold text-gray-700 text-3xl md:text-4xl mb-10">Simulador <b>PAES</b></h1>
+                </div>
+                <div class="grid grid-cols-1 items-center md:grid-cols-2">
+                    <script src="simulator.js"></script>
+                    <form action="" class="grid grid-cols-4" onchange="paesSimulator()">
+                        <div class="mx-2 col-span-3">
+                            <div class="mb-4">
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                                    NEM
+                                </label>
+                                <input id="nem" class="appearance-none border rounded shadow w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none" id="username" type="number" placeholder="500">
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                                    Ranking
+                                </label>
+                                <input id="ranking" class="appearance-none border rounded shadow w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none" id="username" type="number" placeholder="500">
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                                    C. Lectora
+                                </label>
+                                <input id="lenguaje" class="appearance-none border rounded shadow w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none" id="username" type="number" placeholder="500">
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                                    Matemática
+                                </label>
+                                <input id="matematica" class="appearance-none border rounded shadow w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none" id="username" type="number" placeholder="500">
+                            </div> 
+                            <div class="mb-4">
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                                    Historia
+                                </label>
+                                <input id="historia" class="appearance-none border rounded shadow w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none" id="username" type="number" placeholder="500">
+                            </div>          
+                            <div class="mb-4">
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                                    Ciencias
+                                </label>
+                                <input id="ciencias" class="appearance-none border rounded shadow w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none" id="username" type="number" placeholder="500">
+                            </div>                        
+                        </div>
+                        <!--Ponderations-->
+                        <div class="mx-2 col-span-1">
+                            <div class="mb-4">
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                                    Porcentaje
+                                </label>
+                                <input id="p_nem" class="appearance-none border rounded shadow w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none" id="username" type="number" placeholder="%" value="25">
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                                    Porcentaje
+                                </label>
+                                <input id="p_ranking" class="appearance-none border rounded shadow w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none" id="username" type="number" placeholder="%" value="25">
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                                    Porcentaje
+                                </label>
+                                <input id="p_lenguaje" class="appearance-none border rounded shadow w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none" id="username" type="number" placeholder="%" value="15">
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                                    Porcentaje
+                                </label>
+                                <input id="p_matematica" class="appearance-none border rounded shadow w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none" id="username" type="number" placeholder="%" value="25">
+                            </div>    
+                            <div class="mb-4">
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                                    Porcentaje
+                                </label>
+                                <input id="p_historia" class="appearance-none border rounded shadow w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none" id="username" type="number" placeholder="%" value="10">
+                            </div>        
+                            <div class="mb-4">
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                                    Porcentaje
+                                </label>
+                                <input id="p_ciencias" class="appearance-none border rounded shadow w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none" id="username" type="number" placeholder="%">
+                            </div>                        
+                        </div>
 
-                <p class="font-normal text-gray-600 text-md md:text-lg text-center mb-20 md:mb-40">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit <br> anim id est laborum.</p>
-                -->
+                    </form>
+                    <div class="text-center">
+                        <h1 class="md:text-xl">Puntaje simulado</h1>
+                        <h1 class="text-xl md:text-6xl font-semibold"><div id="score">0</div>Puntos</h1>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="py-8 md:py-16">
+
+            <div class="container max-w-screen-xl mx-auto px-4">
                 <div class="flex flex-col xl:flex-row items-center justify-between mb-20 md:mb-40" id="howworks">
                     <div class="mx-auto xl:mx-0 mb-20 xl:mb-0">
                         <img src="assets/image/image-1.svg" alt="Image">
@@ -290,104 +383,6 @@
 
         </section>
 
-        <section class="py-8 md:py-16">
-
-            <div class="container max-w-screen-xl mx-auto px-4">
-
-                <!--
-                <h1 class="font-semibold text-gray-700 text-3xl md:text-4xl text-center mb-5">Our works</h1>
-
-                <p class="font-normal text-gray-600 text-md md:text-lg text-center mb-20">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit <br> anim id est laborum.</p>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 xl:gap-10">
-                    <div class="space-y-2 xl:space-y-4">
-                        <img src="assets/image/yoga-1.svg" alt="Image" class="hover:opacity-75 transition ease-in-out duration-400">
-
-                        <p class="font-normal text-gray-400 text-base">Design, Branding, Development</p>
-
-                        <a href="#" class="block font-semibold text-gray-700 text-xl md:text-2xl hover:text-green-600 transition ease-in-out duration-400">Yoga School</a>
-                    </div>
-
-                    <div class="space-y-2 xl:space-y-4">
-                        <img src="assets/image/yoga-2.svg" alt="Image" class="hover:opacity-75 transition ease-in-out duration-400">
-
-                        <p class="font-normal text-gray-400 text-base">Design, Branding, Development</p>
-
-                        <a href="#" class="block font-semibold text-gray-700 text-xl md:text-2xl hover:text-green-600 transition ease-in-out duration-400">Yoga School</a>
-                    </div>
-
-                    <div class="space-y-2 xl:space-y-4">
-                        <img src="assets/image/yoga-3.svg" alt="Image" class="hover:opacity-75 transition ease-in-out duration-400">
-
-                        <p class="font-normal text-gray-400 text-base">Design, Branding, Development</p>
-
-                        <a href="#" class="block font-semibold text-gray-700 text-xl md:text-2xl hover:text-green-600 transition ease-in-out duration-400">Yoga School</a>
-                    </div>
-
-                    <div class="space-y-2 xl:space-y-4">
-                        <img src="assets/image/yoga-3.svg" alt="Image" class="hover:opacity-75 transition ease-in-out duration-400">
-
-                        <p class="font-normal text-gray-400 text-base">Design, Branding, Development</p>
-
-                        <a href="#" class="block font-semibold text-gray-700 text-xl md:text-2xl hover:text-green-600 transition ease-in-out duration-400">Yoga School</a>
-                    </div>
-
-                    <div class="space-y-2 xl:space-y-4">
-                        <img src="assets/image/yoga-1.svg" alt="Image" class="hover:opacity-75 transition ease-in-out duration-400">
-
-                        <p class="font-normal text-gray-400 text-base">Design, Branding, Development</p>
-
-                        <a href="#" class="block font-semibold text-gray-700 text-xl md:text-2xl hover:text-green-600 transition ease-in-out duration-400">Yoga School</a>
-                    </div>
-
-                    <div class="space-y-2 xl:space-y-4 mb-10 md:mb-20">
-                        <img src="assets/image/yoga-2.svg" alt="Image" class="hover:opacity-75 transition ease-in-out duration-400">
-
-                        <p class="font-normal text-gray-400 text-base">Design, Branding, Development</p>
-
-                        <a href="#" class="block font-semibold text-gray-700 text-xl md:text-2xl hover:text-green-600 transition ease-in-out duration-400">Yoga School</a>
-                    </div>
-                </div>
-
-                <div class="flex justify-center mb-20 md:mb-40">
-                    <a href="#" class="px-6 py-2 md:px-8 md:py-3 flex items-center gap-3 font-medium text-green-600 text-lg border-2 border-green-600 rounded-md hover:bg-green-600 hover:text-white transition ease-linear duration-400">
-                        See more works
-                        <i data-feather="arrow-up-right"></i>
-                    </a>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 ml-4 md:ml-20 xl:ml-0 mb-20 xl:mb-40">
-                    <img src="assets/image/brand-1.svg" alt="Image" class="mb-5 md:mb-10 xl:mb-0">
-
-                    <img src="assets/image/brand-2.svg" alt="Image" class="mb-5 md:mb-0">
-
-                    <img src="assets/image/brand-3.svg" alt="Image" class="mb-5 md:mb-10 xl:mb-0">
-
-                    <img src="assets/image/brand-4.svg" alt="Image" class="mb-5 md:mb-0">
-                </div>
-
-                <div class="flex flex-wrap md:flex-nowrap justify-between mb-8">
-                    <div>
-                        <p class="font-normal text-gray-600 text-md md:text-lg uppercase mb-3">Let's tealk</p>
-
-                        <h1 class="font-bold text-gray-700 text-xl md:text-4xl">Do you have any Project?</h1>
-                    </div>
-
-                    <div class="mt-10">
-                        <a href="#" class="px-4 py-2 md:px-8 md:py-3 font-medium text-green-600 text-lg border-2 border-green-600 rounded-md hover:bg-green-600 hover:text-white transition ease-linear duration-400">
-                            Contact us now
-                        </a>
-                    </div>
-                </div>
-
-                <hr class="text-gray-400 mb-8">
-
-                <p class="font-normal text-gray-600 text-md md:text-lg mb-4 md:mb-10">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit <br> anim id est laborum.</p>
-
-            </div> 
-            -->
-            
-        </section>
 
         <footer class="bg-green-50 py-8 md:py-16">
 
